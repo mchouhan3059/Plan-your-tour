@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Tour | Experience the winds</title>
+    <link rel="icon" href="Images/favicion.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/media.css">
+</head>
+
+<body>
+    <div class="menuBurger">
+        <span class="closeBurger">&times;</span>
+        <figure>
+            <img src="Images/logo.png" alt="Logo">
+        </figure>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Destination By Theme</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="tel:#"><i class="fa fa-phone"></i>+91 8888888888</a></li>
+            <li><button>Enquire Now</button></li>
+            <li><input type="search"> <button><i class="fas fa-search"></i></button></li>
+        </ul>
+    </div>
+    <div class="overlayDrop"></div>
+    <header class="sb">
+        <figure>
+            <img src="Images/logo.png" alt="logo.png">
+        </figure>
+        <button><i class="fa-solid fa-bars"></i></button>
+        <nav class="flex-full-center mnone">
+            <ul class="flex-full-center">
+                <li><a href="index.html">Home</a></li>
+                <li id="navDestination">
+
+                    Destination <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdownmenu drop1 flex">
+                        <ul>
+                            <li class="dropHead">Manali</li>
+
+                            <li><a href="#">3 Night 4 Days Manali Tour Package</a></li>
+                            <li><a href="#">Manali Tour Package For Family</a></li>
+                            <li><a href="#">Manali Tour Packages For Couple</a></li>
+                            <li><a href="#">Shimla Manali Tour Package From Mumbai</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="dropHead">Andaman</li>
+
+                            <li><a href="#">5 Days Andaman Tour Package</a></li>
+                            <li><a href="#">Amazing Andaman 6 Days Tour</a></li>
+                            <li><a href="#">Exotic Andaman 7 Days Tour</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="navByDestination">Destination by Theme <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdownmenu drop2 flex">
+                        <ul>
+                            <li class="dropHead">Adventure</li>
+
+
+                            <li><a href="#">Manali Tour Package For Family</a></li>
+                            <li><a href="#">5 Days Andaman Tour Package</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="dropHead">Family</li>
+
+                            <li><a href="#">Manali Tour Package For Family</a></li>
+                            <li><a href="#">Shimla Manali Tour Package From Mumbai</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="dropHead">Nature</li>
+
+                            <li><a href="#">5 Days Andaman Tour Package</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="dropHead">Honeymoon</li>
+
+                            <li><a href="#">Shimla Manali Tour Package From Mumbai</a></li>
+                            <li><a href="#">5 Days Andaman Tour Package</a></li>
+                            <li><a href="#">Exotic Andaman 7 Days Tour</a></li>
+                            <li><a href="#">Manali Tour Packages For Couple</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="tel:+91 9291924050"><i class="fa-solid fa-phone"></i>+91 9876568890</a></li>
+                <li><button id="navEnquiry">Enquiry Now</button></li>
+                <div class="enquiryForm">
+                    <span class="cross">&times;</span>
+                    <figure>
+                        <img src="Images/enqury.jpg" alt="enqury">
+                    </figure>
+                    <form action="">
+                        <h3>Get The Best Packages</h3>
+                        <input type="text" name="Name" placeholder="Name">
+                        <input type="text" name="Email" placeholder="Email">
+                        <input type="text" name="Number" placeholder="Mobile Number">
+                        <input type="text" name="Location" placeholder="Current Location">
+                        <input type="number" name="Number" placeholder="Number of Adventurers">
+                        <input type="date">
+                        <button id="submitEnquiryForm" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="overlayEnquiry"></div>
+                <li><input type="search" placeholder="Search"></li>
+
+                <li><button id="menuSearch"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main_section-1">
+
+        <article class="bannerHeads">
+
+            <h3>Experience the world with Us</h3>
+            <h4>Choose From Best Holiday Packages or Get Your Personalized Package</h4>
+
+        </article>
+        <main>
+            <form action="" class="SearchPackForm flex">
+                <div class="option">
+                    <select name="Location" id="">
+                        <option value="Location">Location</option>
+                        <option value="Manali">Manali</option>
+                        <option value="Andaman">Andaman</option>
+                        <option value="Kerla">Kerla</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <select name="Type of Packages">
+                        <option value="Type of Package">Type of Package</option>
+                        <option value="">Seasonal Package</option>
+                        <option value="">Adventure</option>
+                        <option value="">Family</option>
+                        <option value="">Nature</option>
+                        <option value="">Honeymoon</option>
+                        <option value="">Wildlife</option>
+                        <option value="">Friends</option>
+                        <option value="">Water Activities</option>
+                        <option value="">Religious</option>
+                    </select>
+                </div>
+
+                <div class="option">
+                    <select name="Duration" id="">
+                        <option value="">Duration</option>
+                        <option value="">4 Days 3 Nights</option>
+                        <option value="">5 Days 4 Nights</option>
+                        <option value="">6 Days 5 Nights</option>
+                        <option value="">7 Days 6 Nights</option>
+                        <option value="">3 Night 4 Days</option>
+                        <option value="">2 Night 3 Days</option>
+                    </select>
+                </div>
+
+                <button type="submit">SHOW PACKAGES</button>
+            </form>
+        </main>
+    </section>
+
+    <section id="main_section-2">
+        <main>
+            <div class="ContentSec flex">
+                <aside>
+                    Enjoy Your Trips to the Fullest
+                    <p>Make your travel dreams a reality!</p>
+                </aside>
+                <article class="flex">
+                    <figure>
+                        <img src="Images/trip1.png" alt="trip1" title="This Summer Deal">
+                    </figure>
+                    <figure>
+                        <img src="Images/trip2.jpg" alt="trip1" title="Luxury Resort Deals">
+                    </figure>
+                    <figure>
+                        <img src="Images/trip2.jpg" alt="trip2" title="Luxury Resort Deals">
+                    </figure>
+                </article>
+            </div>
+        </main>
+    </section>
+
+    <section id="main_section-3">
+        <main>
+            <h3 class="firsthead">TRENDING PACKAGES</h3>
+            <div class="trending flex">
+                <figure>
+                    <img src="Images/manali.jpg" alt="Manali" title="Enjoy your Trips!">
+                    <a href="#">
+                        <div class="overlayImg">
+                            <h3>Manali</h3>
+
+                            <article>
+                                <h4>Starting from</h4>
+                                <h5>Rs. 9000/-</h5>
+                            </article>
+                        </div>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#">
+                        <img src="Images/aandman.jpg" alt="Andaman" title="Enjoy your Trips!">
+                        <div class="overlayImg">
+                            <h3>Andaman</h3>
+                            <article>
+                                <h4>Starting from</h4>
+                                <h5>Rs. 17999/-</h5>
+                            </article>
+                        </div>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#">
+                        <img src="Images/kerla.jpg" alt="Kerla" title="Enjoy your Trips!">
+                        <div class="overlayImg">
+                            <h3>Kerala</h3>
+                            <article>
+                                <h4>Starting from</h4>
+                                <h5>Rs. 10000/-</h5>
+                            </article>
+                        </div>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="#">
+                        <img src="Images/manali.jpg" alt="Manali" title="Enjoy your Trips!">
+                        <div class="overlayImg">
+                            <h3>Manali</h3>
+                            <article>
+                                <h4>Starting from</h4>
+                                <h5>Rs. 9000/-</h5>
+                            </article>
+                        </div>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#">
+                        <img src="Images/aandman.jpg" alt="Andaman" title="Enjoy your Trips!">
+                        <div class="overlayImg">
+                            <h3>Andaman</h3>
+                            <article>
+                                <h4>Starting from</h4>
+                                <h5>Rs. 17999/-</h5>
+                            </article>
+                        </div>
+                    </a>
+                </figure>
+
+
+            </div>
+        </main>
+    </section>
+
+    <section id="main_section-4">
+        <main>
+            <div class="flex-sb headSpace">
+                <h3>Manali Tour Packages</h3>
+                <a href="#">View All Packages</a>
+            </div>
+
+            <div class="home-demo">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/manali1.jpg" alt="manali" title="4 Days 3 Nights">
+                            </figure>
+                            <article>
+                                <h5>4 Days 3 Nights</h5>
+                                <h4>4 Days 3 Nights Manali Tour Package</h4>
+                                <h6>Rs. 11,500 <span>Rs. 15,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/manali2.jpg" alt="manali" title="Family Package">
+                            </figure>
+                            <article>
+                                <h5>5 Days 4 Nights</h5>
+                                <h4>Manali Tour for Family Package</h4>
+                                <h6>Rs. 10,500 <span>Rs. 14,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/MANALI3.jpg" alt="manali" title="4 Days 3 Nights">
+                            </figure>
+                            <article>
+                                <h5>6 Days 5 Nights</h5>
+                                <h4>Shimla Manali Tour Package from Mumbai</h4>
+                                <h6>Rs. 23,000 <span>Rs. 30,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/MANALI4.jpg" alt="manali" title="4 Days 3 Nights">
+                            </figure>
+                            <article>
+                                <h5>4 Days 3 Nights</h5>
+                                <h4>Manali Tour Packages for Couples</h4>
+                                <h6>Rs. 9,000 <span>Rs. 13,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/manali1.jpg" alt="manali" title="4 Days 3 Nights">
+                            </figure>
+                            <article>
+                                <h5>4 Days 3 Nights</h5>
+                                <h4>4 Days 3 Nights Manali Tour Package</h4>
+                                <h6>Rs. 11,500 <span>Rs. 15,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/manali2.jpg" alt="manali" title="Family Package">
+                            </figure>
+                            <article>
+                                <h5>5 Days 4 Nights</h5>
+                                <h4>Manali Tour for Family Package</h4>
+                                <h6>Rs. 10,500 <span>Rs. 14,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/MANALI3.jpg" alt="manali" title="4 Days 3 Nights">
+                            </figure>
+                            <article>
+                                <h5>6 Days 5 Nights</h5>
+                                <h4>Shimla Manali Tour Package from Mumbai</h4>
+                                <h6>Rs. 23,000 <span>Rs. 30,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/MANALI4.jpg" alt="manali" title="4 Days 3 Nights">
+                            </figure>
+                            <article>
+                                <h5>4 Days 3 Nights</h5>
+                                <h4>Manali Tour Packages for Couples</h4>
+                                <h6>Rs. 9,000 <span>Rs. 13,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="main_section-5">
+        <main>
+            <div class="flex-sb headSpace">
+                <h3>Andaman Tour Packages</h3>
+                <a href="#">View All Packages</a>
+            </div>
+
+            <div class="home-demo">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Andaman1.jpg" alt="Andaman" title="5 Days 4 Nights Andaman Tour">
+                            </figure>
+                            <article>
+                                <h5>5 Days 4 Nights</h5>
+                                <h4>5 Days 5 Nights Andaman Tour</h4>
+                                <h6>Rs. 17,999 <span>Rs. 24,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Andaman2.jpg" alt="Andaman" title="Amazing Andaman 6 Days Tour">
+                            </figure>
+                            <article>
+                                <h5>6 Days 5 Nights</h5>
+                                <h4>Amazing Andaman 6 Days Tour</h4>
+                                <h6>Rs. 24,000 <span>Rs. 30,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/andaman3.jpg" alt="Aandman" title="7 Exotic Days at Andaman">
+                            </figure>
+                            <article>
+                                <h5>7 Days 6 Nights</h5>
+                                <h4>Exotic 7 Days Tour at Andaman </h4>
+                                <h6>Rs. 30,000 <span>Rs. 40,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Andaman1.jpg" alt="Andaman" title="5 Days 4 Nights Andaman Tour">
+                            </figure>
+                            <article>
+                                <h5>5 Days 4 Nights</h5>
+                                <h4>5 Days 5 Nights Andaman Tour</h4>
+                                <h6>Rs. 17,999 <span>Rs. 24,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Andaman1.jpg" alt="Andaman" title="5 Days 4 Nights Andaman Tour">
+                            </figure>
+                            <article>
+                                <h5>5 Days 4 Nights</h5>
+                                <h4>5 Days 5 Nights Andaman Tour</h4>
+                                <h6>Rs. 17,999 <span>Rs. 24,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Andaman2.jpg" alt="Andaman" title="Amazing Andaman 6 Days Tour">
+                            </figure>
+                            <article>
+                                <h5>6 Days 5 Nights</h5>
+                                <h4>Amazing Andaman 6 Days Tour</h4>
+                                <h6>Rs. 24,000 <span>Rs. 30,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/andaman3.jpg" alt="Aandman" title="7 Exotic Days at Andaman">
+                            </figure>
+                            <article>
+                                <h5>7 Days 6 Nights</h5>
+                                <h4>Exotic 7 Days Tour at Andaman </h4>
+                                <h6>Rs. 30,000 <span>Rs. 40,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Andaman1.jpg" alt="Andaman" title="5 Days 4 Nights Andaman Tour">
+                            </figure>
+                            <article>
+                                <h5>5 Days 4 Nights</h5>
+                                <h4>5 Days 5 Nights Andaman Tour</h4>
+                                <h6>Rs. 17,999 <span>Rs. 24,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="main_section-6">
+        <main>
+            <div class="flex-sb headSpace">
+                <h3>Kerala Tour Packages</h3>
+                <a href="#">View All Packages</a>
+            </div>
+            <div class="home-demo">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Kerala1.png" alt="Kerala" title="5 Days 3 Nights Kerala Tour">
+                            </figure>
+                            <article>
+                                <h5>4 Days 3 Nights</h5>
+                                <h4>4 Days Exotic Kerala Tour Packages</h4>
+                                <h6>Rs. 15,000 <span>Rs. 20,000 </span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Kerala2.jpg" alt="Kerala" title="Amazing Kerala 3 Days Tour">
+                            </figure>
+                            <article>
+                                <h5>3 Days 2 Nights</h5>
+                                <h4>3 days Kerala Tour Package</h4>
+                                <h6>Rs. 10,000 <span>Rs. 14,000 </span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Kerala1.png" alt="Kerala" title="7 Exotic Days at Andaman">
+                            </figure>
+                            <article>
+                                <h5>4 Days 3 Nights</h5>
+                                <h4>4 Days Exotic Tour Packages </h4>
+                                <h6>Rs. 30,000 <span>Rs. 40,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Kerala2.jpg" alt="Kerala" title="5 Days 4 Nights Andaman Tour">
+                            </figure>
+                            <article>
+                                <h5>5 Days 5 Nights</h5>
+                                <h4>5 Days 5 Nights Keral Tour</h4>
+                                <h6>Rs. 17,999 <span>Rs. 24,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Kerala1.png" alt="Kerala" title="5 Days 3 Nights Kerala Tour">
+                            </figure>
+                            <article>
+                                <h5>4 Days 3 Nights</h5>
+                                <h4>4 Days Exotic Kerala Tour Packages</h4>
+                                <h6>Rs. 15,000 <span>Rs. 20,000 </span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Kerala2.jpg" alt="Kerala" title="Amazing Kerala 3 Days Tour">
+                            </figure>
+                            <article>
+                                <h5>3 Days 2 Nights</h5>
+                                <h4>3 days Kerala Tour Package</h4>
+                                <h6>Rs. 10,000 <span>Rs. 14,000 </span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Kerala1.png" alt="Kerala" title="7 Exotic Days at Andaman">
+                            </figure>
+                            <article>
+                                <h5>4 Days 3 Nights</h5>
+                                <h4>4 Days Exotic Tour Packages </h4>
+                                <h6>Rs. 30,000 <span>Rs. 40,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="packageTheme">
+                            <figure>
+                                <img src="Images/Kerala2.jpg" alt="Kerala" title="5 Days 4 Nights Andaman Tour">
+                            </figure>
+                            <article>
+                                <h5>5 Days 5 Nights</h5>
+                                <h4>5 Days 5 Nights Keral Tour</h4>
+                                <h6>Rs. 17,999 <span>Rs. 24,000</span> Per Person</h6>
+                                <button>Send Enquiry</button>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Packages">
+
+            </div>
+        </main>
+    </section>
+
+    <section id="main_section-7">
+        <main>
+            <div class="headSpace">
+                <h3>Popular Places To Visit</h3>
+            </div>
+
+            <div class="PopularPlaces flex">
+                <figure>
+                    <img src="Images/manali.jpg" alt="Manali" title="Manali">
+                    <figcaption>Manali</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/aandman.jpg" alt="Andaman" title="Andaman">
+                    <figcaption>Andaman</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/kerla.jpg" alt="Kerala" title="Kerala">
+                    <figcaption>Kerala</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/manali.jpg" alt="Manali" title="Manali">
+                    <figcaption>Manali</figcaption>
+                </figure>
+            </div>
+        </main>
+    </section>
+
+    <section id="main_section-8">
+        <main>
+            <div class="headSpace">
+                <h3> Why Choose Us ? </h3>
+                <p>Why Book With PlanYourTour!</p>
+            </div>
+
+            <div class="whyus flex">
+                <div class="whyReasons flex">
+                    <figure>
+                        <img src="Images/reviewthing.png" alt="user_logo" Title="user">
+                    </figure>
+                    <article>
+                        <h3>Customized Packages</h3>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sequi ab consequatur
+                            repellendus exercitationem labore qui perspiciatis. Dolores, consectetur! Fugit quas
+                            consequatur quidem perferendis cupiditate eos voluptatem est obcaecati ad.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="whyReasons flex">
+                    <figure>
+                        <img src="Images/moneything.png" alt="No Hidden Charges" Title="Save money">
+                    </figure>
+                    <article>
+                        <h3>Easy to Book</h3>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sequi ab consequatur
+                        </p>
+                    </article>
+                </div>
+                <div class="whyReasons flex">
+                    <figure>
+                        <img src="Images/ANYQ.png" alt="Question ?" Title="Question">
+                    </figure>
+                    <article>
+                        <h3>No Hidden Charges</h3>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sequi ab consequatur
+                            repellendus exercitationem labore qui perspiciatis. Dolores, consectetur! Fugit quas
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="main_section-9">
+        <main>
+            <div class="headSpace tac">
+                <h3> Happy Customers & Stories </h3>
+            </div>
+
+            <div class="Reviews flex">
+                <div class="reviewBox">
+                    <figure class="tac">
+                        <img src="Images/user1.jpg" alt="">
+                        <figcaption class="tac">Karthik Kumar</figcaption>
+                        <span>Student</span>
+                    </figure>
+                    <article>
+                        <p><i class="fas fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quia eos aliquam corporis natus quod eum laboriosam, nihil laborum at est sit vitae,
+                            beatae ab temporibus quibusdam. Consequatur eos atque similique?
+                        </p>
+                        <div class="stars tac">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt fa-sm"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </article>
+                </div>
+                <div class="reviewBox">
+                    <figure class="tac">
+                        <img src="Images/user2.jpg" alt="user">
+                        <figcaption class="tac">Karthik Kumar</figcaption>
+                        <span>Student</span>
+                    </figure>
+                    <article>
+                        <p><i class="fas fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quia eos aliquam corporis natus quod eum laboriosam, nihil laborum at est sit vitae,
+                            beatae ab temporibus quibusdam. Consequatur eos atque similique?
+                        </p>
+                        <div class="stars tac">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt fa-sm"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </article>
+                </div>
+                <div class="reviewBox">
+                    <figure class="tac">
+                        <img src="Images/user3.jpg" alt="user">
+                        <figcaption class="tac">Karthik Kumar</figcaption>
+                        <span>Student</span>
+                    </figure>
+                    <article>
+                        <p><i class="fas fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quia eos aliquam corporis natus quod eum laboriosam, nihil laborum at est sit vitae,
+                            beatae ab temporibus quibusdam. Consequatur eos atque similique?
+                        </p>
+                        <div class="stars tac">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt fa-sm"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="main_section-10">
+        <main class="whatAboutUs">
+            <h3 class="tac aboutPYT">A Leading Travel Agency : PlanYourTour</h3>
+            <p>PlanYourTour is an emerging name in the tourism industry. With a customer-centric approach and
+                budget-friendly packages, it is one of the primary agencies providing quality trip packages to various
+                parts of India and Whole over the world. We are committed to providing you with beautiful memories to
+                cherish for the rest of your lifetime.
+            </p>
+            <p>
+                You can get a trip deal at reasonable prices by choosing from the existing trip packages. PlanYourTour
+                is also flexible with creating a personalized package as per your demand. You can book a package for
+                yourself, your friends, family, or colleagues and leave the rest to us. We will manage the trip as
+                planned. The only thing you should be concerned about is, enjoying the time of the trip to the fullest.
+            </p>
+        </main>
+    </section>
+
+    <footer id="main_section-11">
+        <main class="destinationLinks">
+            <h3>Destination</h3>
+            <ul>
+                <li><a href="#">3 Night 4 Days Manali Tour Package</a></li>
+                <li><a href="#">Manali Tour Package For Family</a></li>
+                <li><a href="#">Manali Tour Packages For Couple</a></li>
+                <li><a href="#">Shimla Manali Tour Package From Mumbai</a></li>
+                <li><a href="#">5 Days Andaman Tour Package</a></li>
+                <li><a href="#">Amazing Andaman 6 Days Tour</a></li>
+                <li><a href="#">Exotic Andaman 7 Days Tour</a></li>
+            </ul>
+
+            <h3>Destination by Themes</h3>
+            <ul>
+                <li><a href="#">Shimla Manali Tour Package From Mumbai</a></li>
+                <li><a href="#">5 Days Andaman Tour Package</a></li>
+                <li><a href="#">Manali Tour Package For Family</a></li>
+                <li><a href="#">Shimla Manali Tour Package From Mumbai</a></li>
+                <li><a href="#">5 Days Andaman Tour Package</a></li>
+                <li><a href="#">Shimla Manali Tour Package From Mumbai</a></li>
+                <li><a href="#">5 Days Andaman Tour Package</a></li>
+                <li><a href="#">Exotic Andaman 7 Days Tour</a></li>
+                <li><a href="#">Manali Tour Packages For Couple</a></li>
+            </ul>
+        </main>
+        <section class="subscriber">
+            <main>
+                <h3>Subscribe to Newsletters</h3>
+                <p>And stay informed about our news and events</p>
+                <form action="" class="subscribeForm">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Mobile Number">
+                    <input type="email" placeholder="Enter Email">
+                    <button type="submit"><i class="fa fa-paper-plane"></i> Subscribe</button>
+                </form>
+            </main>
+        </section>
+        <section id="main_section-12">
+            <main class="flex commonFoot">
+                <article>
+                    <figure>
+                        <img src="Images/logo.png" alt="Logo" title="Plan Your Tour">
+                    </figure>
+                    <p>
+                        PlanYourTour is a trusted travel agency that curates personalized travel experiences for its
+                        clients. With a team of experts, they offer end-to-end travel solutions, making travel planning
+                        hassle-free and enjoyable.
+                    </p>
+                </article>
+                <ul>
+                    <li>Destination by Theme</li>
+                    <li><a href="#">Adventure</a></li>
+                    <li><a href="#">Family</a></li>
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Honeymoon</a></li>
+                </ul>
+                <ul>
+                    <li>Quicks Links</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                </ul>
+                <ul>
+                    <li>Contact Us</li>
+                    <li><a href="#">Address : India</a></li>
+                    <li><a href="#">Call : +91 8887801385</a></li>
+                    <li><a href="#">Email : info@planyourtour.in</a></li>
+                    <li class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                    </li>
+                </ul>
+            </main>
+        </section>
+
+        <p class="tac TnC"><a href="#">Terms & Conditions </a> | <a href="#">Privacy Policy</a> | <span>© PlanYourTour.
+                All rights
+                reserved.</span></p>
+
+    </footer>
+
+</body>
+<script src="/Scripts/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</html>

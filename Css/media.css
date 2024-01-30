@@ -1,0 +1,98 @@
+@media only screen and (min-width: 200px) and (max-width:575px) {
+    .mnone {
+        display: none !important;
+    }
+
+    #main_section-1 {
+        background-size: 100% 350px;
+    }
+
+    header>figure {
+        flex-basis: 60%;
+    }
+
+    header>button{
+        display: block;
+    }
+    .bannerHeads {
+        padding: 100px 0px 0px;
+    }
+
+    .bannerHeads h3 {
+        font-size: 28px;
+        padding: 0px 35px 20px;
+    }
+
+    .bannerHeads h4 {
+        font-size: 18px;
+        padding: 0px 50px;
+        line-height: 30px;
+    }
+
+    .SearchPackForm {
+        position: static;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    section {
+        padding: 0px 20px;
+    }
+
+    .ContentSec {
+        flex-direction: column;
+    }
+
+    .ContentSec {
+        margin: 20px 0px;
+    }
+
+    .trending,
+    .Packages,
+    .PopularPlaces
+     {
+        overflow-x: auto;
+    }
+
+
+    .trending figure img,
+    .packageTheme figure img,
+    .PopularPlaces figure img {
+        width: 86vw;
+        height: auto;
+    }
+
+    .headSpace,
+    .whyus,
+    .Reviews,
+    .subscribeForm,
+    .commonFoot{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .packageTheme{
+        margin-bottom: 40px;
+    }
+    .stars{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .whatAboutUs{
+        padding: 20px 0px;
+    }
+    .whatAboutUs p {
+        padding: 0px 20px;
+    }
+    .destinationLinks {
+        padding: 0px 20px;
+    }
+    .subscriber{
+        padding: 20px;
+    }
+    .subscribeForm input{
+        margin-right: 0px;
+    }
+}
